@@ -1,0 +1,50 @@
+{
+	"style": [
+		{
+			"selector": "node",
+			"style": {
+				"border-width": "2px",
+				"shape": "round-rectangle",
+				"width": "20em",
+				"height": "5em",
+				"label": "data(type)",
+				"text-halign": "center",
+				"text-valign": "center",
+				"padding": "0px",
+				"background-color": "white"
+			}
+		},
+		{
+			"selector": "edge",
+			"style": {
+				"mid-target-arrow-shape": "triangle",
+				"mid-target-arrow-color": "black",
+				"arrow-scale": "2",
+				"line-color": "black",
+				"curve-style": "bezier"
+			}
+		},
+		{
+			"selector": "node[type = 'Input']",
+			"style": {
+				"border-width": "2px",
+				"shape": "ellipse",
+				"width": "5em",
+				"height": "5em",
+				"label": "data(type)",
+				"background-color": "red"
+			}
+		},
+		{
+			"selector": "node[type = 'Output']",
+			"style": {
+				"border-width": "2px",
+				"shape": "ellipse",
+				"width": "5em",
+				"height": "5em",
+				"label": "data(type)",
+				"background-color": "blue"
+			}
+		}
+	]
+}

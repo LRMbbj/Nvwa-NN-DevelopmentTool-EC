@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>女娲神经网络开发工具</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script>
+			const layerTempleteUrl = "./json/layer-templete.json";
+			const activationFuntionListUrl = "./json/activation-functions.json";
+			window.$ = window.jQuery = require("jquery");
+			var LAYERTEMPLETE = {},
+				ACTIVATIONFUNCTIONS = [];
+			$.ajax({
+				url: layerTempleteUrl,
+				type: "GET",
+				dataType: "json",
+				success: (data) => {
+					LAYERTEMPLETE = data;
+				},
+			});
+			$.ajax({
+				url: activationFuntionListUrl,
+				type: "GET",
+				dataType: "json",
+				success: (data) => {
+					ACTIVATIONFUNCTIONS = Object.keys(data);
+				},
+			});
+		</script>
+		<script src="renderer/renderer.js"></script>
+		<script src="renderer/CytoscapeGraph.js"></script>
+		<script src="renderer/propertyManagerRenderer.js"></script>
+	</head>
+	<body>
+		<div id="toolbar">
+			<button class="toolbaritem" onclick="OnBtnPropertyMode()">
+				Property Mode
+			</button>
+			<button class="toolbaritem" onclick="OnBtnEditMode()">
+				Edit Mode
+			</button>
+			<button class="toolbaritem" onclick="OnBtnConnectMode()">
+				Connect Mode
+			</button>
+		</div>
+		<div class="container" id="container">
+			<div class="objectbar">
+				<div class="objectbarlabel">Layers</div>
+				<button
+					class="objectbaritem"
+					onclick="CreateLayer('FullConnected')"
+				>
+					Full Connected
+				</button>
+				<button
+					class="objectbaritem"
+					onclick="CreateLayer('Convolutional')"
+				>
+					Convolutional
+				</button>
+				<button class="objectbaritem" onclick="CreateLayer('Pooling')">
+					Pooling
+				</button>
+				<button class="objectbaritem" onclick="CreateLayer('Flatten')">
+					Flatten
+				</button>
+				<button class="objectbaritem">Normalization</button>
+				<div class="objectbarlabel">Flow Control</div>
+				<button class="objectbaritem">Mixer</button>
+				<button class="objectbaritem">Splitter</button>
+				<button class="objectbaritem">Multiplex</button>
+			</div>
+			<div id="cy"><div id="nav"></div></div>
+			<div id="propertybar">
+				<div id="propertyArea"></div>
+			</div>
+		</div>
+	</body>
+</html>

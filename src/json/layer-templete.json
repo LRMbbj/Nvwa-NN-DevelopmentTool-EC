@@ -1,0 +1,28 @@
+{
+	"Input": {
+		"size": "Fixed"
+	},
+	"Output": {
+		"size": "Fixed"
+	},
+	"FullConnected": {
+		"nodeNum": "Int",
+		"ActivationFunc": "ActivationFunc"
+	},
+	"Convolutional": {
+		"in_channel": "Int",
+		"out_channel": "Int",
+		"kernel_size": "Int",
+		"stride": "Int",
+		"padding": "Int",
+		"ActivationFunc": "ActivationFunc"
+	},
+	"Pooling": {
+		"poolingPolicy": "List",
+		"_poolingPolicyList": ["Max", "Avg"],
+		"kernel_size": "Int",
+		"stride": "Int",
+		"padding": "Int"
+	},
+	"Flatten": {}
+}

@@ -1,0 +1,12 @@
+{
+	"None": "",
+	"Sigmoid": "nn.Sigmoid()",
+	"Tanh": "nn.Tanh()",
+	"Relu": "nn.ReLU()",
+	"Leaky Relu": "nn.LeakyReLU()",
+	"P-Relu": "nn.PReLU()",
+	"Elu": "nn.ELU()",
+	"Gelu": "nn.GELU()",
+	"R-ReLU": "nn.RReLU()",
+	"Selu": "nn.SELU()"
+}

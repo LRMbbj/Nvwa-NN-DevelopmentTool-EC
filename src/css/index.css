@@ -1,0 +1,149 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Helvetica, Arial, sans-serif;
+	margin: 0%;
+	/* overflow: hidden; */
+	flex-flow: column;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+}
+
+.container {
+	display: flex;
+	flex-flow: row;
+	width: 100vw;
+	margin: 0%;
+	user-select: none;
+	height: calc(100vh - (2.5em));
+}
+
+.objectbar {
+	float: left;
+	display: flex;
+	width: 10%;
+	min-width: 7em;
+	padding: 0.25em;
+
+	flex-direction: column;
+	background-color: darkorange;
+}
+
+.objectbarlabel {
+	margin: 0.25em;
+}
+
+.objectbaritem {
+	margin: 0.25em;
+	height: 100%;
+}
+
+#propertybar {
+	float: right;
+	width: 20%;
+	min-width: 8em;
+	height: 100%;
+	min-width: 15em;
+	background-color: aqua;
+}
+
+#propertyArea {
+	padding: 0.5em;
+	display: flex;
+	flex-direction: column;
+}
+
+.propertyLabel {
+	align-self: baseline;
+}
+
+.propertyData {
+	align-self: baseline;
+	font-size: large;
+}
+
+#cy {
+	display: flex;
+	background-color: gold;
+	overflow: hidden;
+	flex: 1;
+}
+
+#nav {
+	cursor: default;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	border: #000000 1px solid;
+	border-radius: 5px;
+	background-color: #ffffffc8;
+	height: 12em;
+	width: 12em;
+	overflow: hidden;
+	z-index: 999;
+}
+
+#toolbar {
+	flex-direction: column;
+	height: 2.5em;
+	align-items: center;
+	display: block;
+
+	background-color: lightpink;
+	padding: 0.25em;
+	user-select: none;
+}
+
+.toolbaritem {
+	height: 100%;
+}
+
+.cytoscape-navigator {
+	position: fixed;
+	border: 1px solid #000;
+	background: #fff;
+	z-index: 99999;
+	width: 400px;
+	height: 400px;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	user-select: none;
+}
+
+.cytoscape-navigator > img {
+	max-width: 100%;
+	max-height: 100%;
+	user-select: none;
+}
+
+.cytoscape-navigator > canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	user-select: none;
+}
+
+.cytoscape-navigatorView {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: move;
+	background: #4c4c4c;
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha" (Opacity=50);
+	z-index: 0;
+	user-select: none;
+}
+
+.cytoscape-navigatorOverlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	user-select: none;
+}
