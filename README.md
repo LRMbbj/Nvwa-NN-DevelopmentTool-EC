@@ -1,6 +1,8 @@
 # Nvwa-NN-DevelopmentTool-EC
 
-女娲——一款可视化神经网络开发工具（Electron 重构）
+女娲——一款可视化神经网络开发工具（Electron 重构） ![](https://unv-shield.librian.net/api/unv_shield?repo=LRMbbj/Nvwa-NN-DevelopmentTool&url=https://avatars.githubusercontent.com/u/73622238&barradius=999&)
+
+![](https://unv-shield.librian.net/api/unv_shield?txt=LRMbbj&url=https://avatars.githubusercontent.com/u/73622238&barradius=999)![](https://unv-shield.librian.net/api/unv_shield?txt=神经网络&url=https://avatars.githubusercontent.com/u/73622238&barradius=999)![](https://unv-shield.librian.net/api/unv_shield?txt=可视化&url=https://avatars.githubusercontent.com/u/73622238&barradius=999)
 
 本工具是一款不妥协的可视化神经网络开发工具，生成 Pytorch 神经网络类
 
