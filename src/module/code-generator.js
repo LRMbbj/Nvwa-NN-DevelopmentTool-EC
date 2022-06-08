@@ -3,7 +3,7 @@ const fs = require("fs");
 const MODELTEMPLETEURL = "./src/module/model-templete.txt";
 
 const sum = (arr) => {
-	return eval(arr.join("+"));
+	return eval(arr.join("*"));
 };
 
 class Layer {
@@ -97,7 +97,7 @@ class Layer_Convolutional extends Layer {
 				layerTag: "conv",
 				defination: `nn.Sequential(	nn.Conv2d(${this.in_channel}, ${
 					this.out_channel
-				}, ${this.kernel_size}, ${this.stride}, ${this.padding})
+				}, ${this.kernel_size}, ${this.stride}, ${this.padding})，
 				${ACTIVATIONFUNC[this.ActivationFunc]})`,
 			};
 		}
