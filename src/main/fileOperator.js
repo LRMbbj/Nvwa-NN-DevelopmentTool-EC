@@ -12,7 +12,7 @@ const FileOperator = {
 				var generator = new CodeGenerate(msg.NeuralNetwork);
 				var output_str = generator.GenerateCode();
 				fs.writeFile(path, output_str, (e) => {
-					throw Error(e);
+					if (e != null) throw Error(e);
 				});
 			} else {
 				dialog.showErrorBox(
